@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(228, 238, 254);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #2465fe;
+    height: 70px;
+    gap: 5px;
+}
+svg {
+    width: 23px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.city-selection-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 70px;
+}
+.search-bar {
+    height: 33px;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 250px;
+}
+.search-bar:active {
+    border-color: #4d9bfb;
+}
+.search-btn {
+    width: 39px;
+    background-color: rgb(152, 152, 152);
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+

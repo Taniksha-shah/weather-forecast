@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/general.css"/>
+</head>
+<body>
+    <nav class="weather-forecast-text">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+        </svg>
+        <div>Weather Forecast</div>
+    </nav>
+    <main>
+        <div class="city-selection-div">
+            <div class="search">
+                <input type="text" placeholder="Search for a city..." spellcheck="false" class="search-bar">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="weather-forecast-div">
+            <div class="today-weather-div">
+                <div class="city-div">
+                    <div class="city-name-state-div">
+                        <div class="city-name-div">
+                            New York, NY
+                        </div>
+                        <div class="city-weather-state-text">
+                            Mixed clouds and sun
+                        </div>
+                    </div>
+                    <div class="weather-state-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="30" height="30">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="temp-div">
+                    <div class="temp-text">37°</div>
+                    <div class="temp-desc">
+                        <div class="temp-feels-like-text">Feels like 32°</div>
+                        <div class="temp-desc-text">Partly cloudy</div>
+                    </div>
+                </div>
+                <div class="humidity-wind-div">
+                    <div class="humidity-div">
+                        <div class="humidity-title">Humidity : </div>
+                        <div class="humidity-percent">37%</div>
+                    </div>
+                    <div class="wind-div">
+                        <div class="wind-title">Wind : </div>
+                        <div class="wind-percent">37 km/h</div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-weather-div">
+                <div class="week-weather-text">7-day Forecast</div>
+                <div class="week-preview-cards">
+                    <div class="day-preview-card">
+                        <div class="day-div">
+                            <div class="day-text">Mon</div>
+                            <div class="date-text">Sep 22</div>
+                        </div>
+                        <div class="weather-div">
+                            <div class="weather-icon-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                </svg>
+                            </div>
+                            <div class="weather-text">Cloudy</div>
+                        </div>
+                        <div class="max-min-temp-div">
+                            <div class="max-temp">37°</div>
+                            <div class="min-temp">18°</div>
+                        </div>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="day-preview-card">
+                        <div class="day-div">
+                            <div class="day-text">Mon</div>
+                            <div class="date-text">Sep 22</div>
+                        </div>
+                        <div class="weather-div">
+                            <div class="weather-icon-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                </svg>
+                            </div>
+                            <div class="weather-text">Cloudy</div>
+                        </div>
+                        <div class="max-min-temp-div">
+                            <div class="max-temp">37°</div>
+                            <div class="min-temp">18°</div>
+                        </div>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="day-preview-card">
+                        <div class="day-div">
+                            <div class="day-text">Mon</div>
+                            <div class="date-text">Sep 22</div>
+                        </div>
+                        <div class="weather-div">
+                            <div class="weather-icon-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                </svg>
+                            </div>
+                            <div class="weather-text">Cloudy</div>
+                        </div>
+                        <div class="max-min-temp-div">
+                            <div class="max-temp">37°</div>
+                            <div class="min-temp">18°</div>
+                        </div>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="day-preview-card">
+                        <div class="day-div">
+                            <div class="day-text">Mon</div>
+                            <div class="date-text">Sep 22</div>
+                        </div>
+                        <div class="weather-div">
+                            <div class="weather-icon-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                </svg>
+                            </div>
+                            <div class="weather-text">Cloudy</div>
+                        </div>
+                        <div class="max-min-temp-div">
+                            <div class="max-temp">37°</div>
+                            <div class="min-temp">18°</div>
+                        </div>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="day-preview-card">
+                        <div class="day-div">
+                            <div class="day-text">Mon</div>
+                            <div class="date-text">Sep 22</div>
+                        </div>
+                        <div class="weather-div">
+                            <div class="weather-icon-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                </svg>
+                            </div>
+                            <div class="weather-text">Cloudy</div>
+                        </div>
+                        <div class="max-min-temp-div">
+                            <div class="max-temp">37°</div>
+                            <div class="min-temp">18°</div>
+                        </div>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="day-preview-card">
+                        <div class="day-div">
+                            <div class="day-text">Mon</div>
+                            <div class="date-text">Sep 22</div>
+                        </div>
+                        <div class="weather-div">
+                            <div class="weather-icon-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                </svg>
+                            </div>
+                            <div class="weather-text">Cloudy</div>
+                        </div>
+                        <div class="max-min-temp-div">
+                            <div class="max-temp">37°</div>
+                            <div class="min-temp">18°</div>
+                        </div>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="day-preview-card">
+                        <div class="day-div">
+                            <div class="day-text">Mon</div>
+                            <div class="date-text">Sep 22</div>
+                        </div>
+                        <div class="weather-div">
+                            <div class="weather-icon-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                </svg>
+                            </div>
+                            <div class="weather-text">Cloudy</div>
+                        </div>
+                        <div class="max-min-temp-div">
+                            <div class="max-temp">37°</div>
+                            <div class="min-temp">18°</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

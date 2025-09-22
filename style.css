@@ -1,0 +1,252 @@
+@media screen and (max-width: 750px) {
+
+  /* Base styling for all flex containers to reduce repetition */
+  .weather-forecast-div,
+  .today-weather-div,
+  .city-div,
+  .city-name-state-div,
+  .temp-div,
+  .temp-desc,
+  .humidity-wind-div,
+  .humidity-div,
+  .wind-div,
+  .week-weather-div,
+  .day-preview-card,
+  .weather-div,
+  .max-min-temp-div,
+  .day-div {
+    display: flex;
+  }
+  
+  .weather-forecast-div {
+    flex-direction: column;
+    align-items: center; /* Changed from start to be more specific */
+    gap: 20px;
+    font-size: 15px;
+  }
+
+  .today-weather-div {
+    background-color: #4b0082;
+    background-image: linear-gradient(135deg, #4d9bfb, #883bbf);
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .city-div {
+    flex-direction: row;
+    justify-content: space-between; /* Replaces the fixed gap for better responsiveness */
+  }
+
+  .city-name-state-div {
+    flex-direction: column;
+  }
+
+  .city-name-div {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  .city-weather-state-text {
+    color: rgb(169, 202, 255);
+    font-size: 15px;
+  }
+
+  .temp-div {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .temp-text {
+    font-size: 38px;
+  }
+
+  .temp-desc {
+    flex-direction: column;
+    gap: 3px;
+    font-size: 15px;
+    color: rgb(169, 202, 255);
+  }
+
+  .humidity-wind-div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .humidity-div,
+  .wind-div {
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(169, 202, 255);
+  }
+
+  .week-weather-div {
+    background-color: white;
+    color: rgb(4, 4, 72);
+    border-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .day-preview-card {
+    flex-direction: row;
+    justify-content: space-between; /* Replaces fixed gap */
+    align-items: center;
+    padding: 20px 0; /* Shorthand for top/bottom padding */
+    font-size: 13px;
+  }
+
+  .day-div {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .date-text,
+  .weather-div,
+  .min-temp {
+    color: rgb(139, 139, 139);
+  }
+  
+  .weather-div,
+  .max-min-temp-div {
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+  }
+
+  .line-break {
+    height: 1px;
+    background-color: rgb(210, 210, 210);
+  }
+}
+
+@media screen and (min-width: 701px) {
+    .weather-forecast-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        font-size: 15px;
+    }
+    
+    .today-weather-div {
+        background-color: #4b0082; /* This is a fallback color */
+        background-image: linear-gradient(135deg, #4d9bfb, #883bbf);
+        color: white;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .city-div {
+        display: flex;
+        flex-direction: row;
+        gap: 300px;
+    }
+
+    .city-name-state-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .city-name-div {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+
+    .city-weather-state-text {
+        color: rgb(169, 202, 255);
+        font-size: 15px;
+    }
+
+    .temp-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .temp-text {
+        font-size: 38px;
+    }
+
+    .temp-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        font-size: 15px;
+        color:rgb(169, 202, 255);
+    }
+
+    .humidity-wind-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .humidity-div,
+    .wind-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 15px;
+        color:rgb(169, 202, 255);
+    }
+
+    .week-weather-div {
+        background-color: white;
+        color: rgb(4, 4, 72);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .day-preview-card,
+    .weather-div,
+    .max-min-temp-div {
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        align-items: center;
+    }
+
+    .day-preview-card {
+        gap: 28px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .day-div {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .date-text {
+        font-size: 12px;
+        color: rgb(139, 139, 139);
+    }
+
+    .weather-div,
+    .min-temp {
+        color: rgb(139, 139, 139);
+    }
+
+    .line-break {
+        height: 1px;
+        background-color: rgb(210, 210, 210);
+    }
+}
