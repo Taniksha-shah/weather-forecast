@@ -106,12 +106,13 @@
   }
 
   .day-preview-card {
-    flex-direction: row;
-    justify-content: space-between; /* Replaces fixed gap */
-    align-items: center;
-    padding: 20px 0; /* Shorthand for top/bottom padding */
-    font-size: 13px;
-  }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; /* This will create space between items */
+      align-items: center; /* This will vertically center items */
+      padding: 20px 0;
+      font-size: 13px;
+    }
 
   .day-div {
     flex-direction: column;
@@ -130,7 +131,13 @@
     gap: 3px;
     align-items: center;
   }
-
+  
+  .week-preview-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
   .line-break {
     height: 1px;
     background-color: rgb(210, 210, 210);
@@ -245,10 +252,12 @@
     }
 
     .day-preview-card {
-        gap: 28px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 13px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; /* This will create space between items */
+      align-items: center; /* This will vertically center items */
+      padding: 20px 0;
+      font-size: 13px;
     }
 
     .day-div {
@@ -267,6 +276,18 @@
         color: rgb(139, 139, 139);
     }
 
+  .weather-div,
+  .max-min-temp-div {
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+  }
+
+  .week-preview-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
     .line-break {
         height: 1px;
         background-color: rgb(210, 210, 210);
