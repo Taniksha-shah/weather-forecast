@@ -55,6 +55,10 @@
     font-size: 15px;
   }
 
+  .weather-state-icon img {
+    width: 40px;
+  }
+
   .temp-div {
     flex-direction: row;
     align-items: center;
@@ -72,6 +76,12 @@
     color: rgb(169, 202, 255);
   }
 
+  .temp-feels-like-text {
+      display: flex;
+      flex-direction: row;
+      gap: 2px;
+  }
+
   .humidity-wind-div {
     flex-direction: row;
     justify-content: space-between;
@@ -84,6 +94,7 @@
     align-items: center;
     font-size: 15px;
     color: rgb(169, 202, 255);
+    gap: 2px;
   }
 
   .week-weather-div {
@@ -169,6 +180,10 @@
         font-size: 15px;
     }
 
+    .weather-state-icon img {
+      width: 40px;
+    }
+
     .temp-div {
         display: flex;
         flex-direction: row;
@@ -188,6 +203,12 @@
         color:rgb(169, 202, 255);
     }
 
+    .temp-feels-like-text {
+      display: flex;
+      flex-direction: row;
+      gap: 2px;
+    }
+
     .humidity-wind-div {
         display: flex;
         flex-direction: row;
@@ -202,6 +223,7 @@
         align-items: center;
         font-size: 15px;
         color:rgb(169, 202, 255);
+        gap: 2px;
     }
 
     .week-weather-div {
