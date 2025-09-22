@@ -70,7 +70,6 @@ async function checkWeather(city) {
                     : "/img/default.png";
 
                 const card = document.createElement("div");
-                card.className = "forecast-card";
                 card.innerHTML = `
                     <div class="day-preview-card">
                         <div class="day-div">
@@ -80,15 +79,13 @@ async function checkWeather(city) {
                             <div class="weather-icon-img">
                                 <img src="${icon}" alt="${item.weather[0].main}" class="forecast-icon" width="20" height="20"/>
                             </div>
-                            <div class="weather-text">${data.weather[0].description}</div>
+                            <div class="weather-text">${item.weather[0].description}</div>
                         </div>
                         <div class="max-min-temp-div">
                             <div class="max-temp">${Math.round(item.main.temp_max)}°C</div>
                             <div class="min-temp">${Math.round(item.main.temp_min)}°C</div>
                         </div>
-                    </div>
-                    
-                `;
+                    </div>`;
                 weekPreviewCards.appendChild(card);
                 
             });

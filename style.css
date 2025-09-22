@@ -115,21 +115,30 @@
     }
 
   .day-div {
-    flex-direction: column;
-    gap: 2px;
-  }
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .day-text {
+    font-size: 12px;
+    width: 75px;
+    }
+    
+    .weather-div,
+    .min-temp {
+        color: rgb(139, 139, 139);
+    }
 
-  .date-text,
-  .weather-div,
-  .min-temp {
-    color: rgb(139, 139, 139);
-  }
-  
   .weather-div,
   .max-min-temp-div {
     flex-direction: row;
     gap: 3px;
     align-items: center;
+  }
+
+  .weather-text,
+  .max-min-temp-div {
+    width: 70px;
   }
   
   .week-preview-cards {
@@ -137,11 +146,10 @@
     flex-direction: column;
     gap: 2px;
   }
-  
-  .line-break {
-    height: 1px;
-    background-color: rgb(210, 210, 210);
-  }
+    .line-break {
+        height: 1px;
+        background-color: rgb(210, 210, 210);
+    }
 }
 
 @media screen and (min-width: 701px) {
@@ -265,12 +273,11 @@
         flex-direction: column;
         gap: 2px;
     }
-
-    .date-text {
-        font-size: 12px;
-        color: rgb(139, 139, 139);
+    .day-text {
+    font-size: 12px;
+    width: 75px;
     }
-
+    
     .weather-div,
     .min-temp {
         color: rgb(139, 139, 139);
@@ -283,6 +290,11 @@
     align-items: center;
   }
 
+  .weather-text,
+  .max-min-temp-div {
+    width: 70px;
+  }
+  
   .week-preview-cards {
     display: flex;
     flex-direction: column;
