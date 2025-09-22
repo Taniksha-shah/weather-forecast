@@ -61,5 +61,10 @@ main {
     color: white;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-
+.search-btn:hover {
+    background-color: white;
+    color: rgb(152, 152, 152);
+    border-color: rgb(152, 152, 152);
+}
