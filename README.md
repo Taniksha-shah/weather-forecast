@@ -1,6 +1,8 @@
 # Weather Forecast App ☀️
 
-This is a simple web application that provides real-time weather information and a 7-day forecast for any city around the world. It is built using HTML, CSS, and JavaScript.
+This is a simple web application that provides real-time weather information and a 7-day forecast for any city around the world. It is built using HTML, CSS, and JavaScript and deployed using Vercel.
+
+Live Demo Link : https://weather-forecast-self-nu.vercel.app/
 
 ## Features
 
