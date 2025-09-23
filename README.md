@@ -12,7 +12,7 @@ Live Demo Link : https://weather-forecast-self-nu.vercel.app/
   * **Responsive Design:** The app is fully responsive and works on desktops, tablets, and mobile devices.
 
 ## Screenshots
-![desktop-screenshot](/img/ss1.png)
+![desktop-screenshot](img/ss1.png)
 
 ## Technologies Used
 
