@@ -1,4 +1,4 @@
-const apiKey = ""; //your api key
+const apiKey = "8b31efa1bb6a5d665ece492bc139e4fc"; //your api key
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox = document.querySelector(".search-bar");
@@ -18,6 +18,7 @@ async function checkWeather(city) {
     document.querySelector(".city-weather-state-text").innerHTML = data.weather[0].description;
     document.querySelector(".temp-text").innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector(".feels-like-temp").innerHTML = Math.round(data.main.feels_like) + "°C";
+    document.querySelector(".temp-desc-text").innerHTML = data.weather[0].main;
     document.querySelector(".humidity-percent").innerHTML = Math.round(data.main.humidity) + "%";
     document.querySelector(".wind-speed").innerHTML = Math.round(data.wind.speed) + " km/h";
 
@@ -29,6 +30,8 @@ async function checkWeather(city) {
         } else if (data.weather[0].main == "Clear") {
         weatherStt.src = "/img/sun.png";
         } else if (data.weather[0].main == "Mist") {
+        weatherStt.src = "/img/mist.png";
+        } else if (data.weather[0].main == "Haze") {
         weatherStt.src = "/img/haze.png";
         } else if (data.weather[0].main == "Drizzle") {
         weatherStt.src = "/img/drizzle.png";
@@ -66,6 +69,7 @@ async function checkWeather(city) {
                     : item.weather[0].main === "Mist" ? "/img/haze.png"
                     : item.weather[0].main === "Drizzle" ? "/img/drizzle.png"
                     : item.weather[0].main === "Rain" ? "/img/rain.png"
+                    : item.weather[0].main === "Haze" ? "/img/haze.png"
                     : item.wind.speed > 5 ? "/img/windy.png"
                     : "/img/default.png";
 
@@ -80,10 +84,6 @@ async function checkWeather(city) {
                                 <img src="${icon}" alt="${item.weather[0].main}" class="forecast-icon" width="20" height="20"/>
                             </div>
                             <div class="weather-text">${item.weather[0].description}</div>
-                        </div>
-                        <div class="max-min-temp-div">
-                            <div class="max-temp">${Math.round(item.main.temp_max)}°C</div>
-                            <div class="min-temp">${Math.round(item.main.temp_min)}°C</div>
                         </div>
                     </div>`;
                 weekPreviewCards.appendChild(card);

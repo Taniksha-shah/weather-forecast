@@ -124,21 +124,18 @@
     width: 75px;
     }
     
-    .weather-div,
-    .min-temp {
+    .weather-div {
         color: rgb(139, 139, 139);
     }
 
-  .weather-div,
-  .max-min-temp-div {
+  .weather-div {
     flex-direction: row;
     gap: 3px;
     align-items: center;
   }
 
-  .weather-text,
-  .max-min-temp-div {
-    width: 70px;
+  .weather-text {
+    width: 100px;
   }
   
   .week-preview-cards {
@@ -278,21 +275,18 @@
     width: 75px;
     }
     
-    .weather-div,
-    .min-temp {
+    .weather-div {
         color: rgb(139, 139, 139);
     }
 
-  .weather-div,
-  .max-min-temp-div {
+  .weather-div {
     flex-direction: row;
     gap: 3px;
     align-items: center;
   }
 
-  .weather-text,
-  .max-min-temp-div {
-    width: 70px;
+  .weather-text {
+    width: 100px;
   }
   
   .week-preview-cards {
