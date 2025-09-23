@@ -11,6 +11,9 @@ Live Demo Link : https://weather-forecast-self-nu.vercel.app/
   * **City Search:** Allows users to get weather information for any city by typing its name.
   * **Responsive Design:** The app is fully responsive and works on desktops, tablets, and mobile devices.
 
+## Screenshots
+![desktop-screenshot](/img/ss1.png)
+
 ## Technologies Used
 
   * **HTML:** For the app's structure.
